@@ -1,0 +1,50 @@
+I"<h1 id="frontline">Frontline</h1>
+
+<p>Uniquely human activities - how Rhythm adds value</p>
+<ul>
+  <li>Secure</li>
+  <li>Frictionless</li>
+  <li>Compliant</li>
+  <li>Sentiment</li>
+  <li>Communicate</li>
+</ul>
+
+<h2>Heading</h2>
+
+<!-- timeline-->
+<div class="timeline" style="margin: 48px 0;">
+
+  <div class="container left">
+    <div class="timeline-content">
+      <h3>2021: Rhythm LITE</h3>
+      <p>Blurb</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="timeline-content">
+    <h3>2019: Rhythm CARE</h3>
+    <p>Blurb</p>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="timeline-content">
+      <h3>2021: DEEP Rhythm</h3>
+      <p>Blurb</p>
+    </div>
+  </div>
+
+</div>
+
+<h2>Rhythm - 	What it does </h2>
+<p>Digitally connect frontline workforces to the organisation
+with secure and frictionless mobile first applications, making it easier for the frontline people who take care of customers.</p>
+<ul>
+  <li>Mobile First</li>
+  <li>Authenticated</li>
+  <li>Secure</li>
+  <li>Non-persistent</li>
+
+</ul>
+:ET
