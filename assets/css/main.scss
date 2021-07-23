@@ -43,6 +43,7 @@ $footer-color: none;
 $timeline-line-color: #ffac86;
 $timeline-box-color: #f5f4f3;
 $timeline-dot-color: $lark-orange;
+$logo-size: 20px;
 
 // breakpoints
 @mixin for-phone-only {
@@ -182,13 +183,12 @@ ul, ol {
 }
 blockquote {
   margin-top: $spacer;
-  padding-left: $spacer / 2;
-  border-left: 6px solid $heading-color;
+  //padding-left: $spacer / 2;
+  // border-left: 6px solid $lark-orange;
   font-style: italic;
-  color: $soaring-eagle;
 
   p, strong {
-  color: $soaring-eagle;
+  color: $lark-orange;
   }
   img {
     max-width: 2em;
@@ -305,10 +305,11 @@ footer {
   }
 }
 
-// custom
+// custom styles!!!
 .rapper {
   margin-left: auto;
   margin-right: auto;
+  margin-top: $spacer * 3;
   width: 100%;
   padding-left: $spacer;
   padding-right: $spacer;
@@ -316,21 +317,82 @@ footer {
   @extend %clearfix;
 
   @include for-tablet-landscape-up {
-    max-width: 960px;
+    max-width: 1080px;
     padding-left: $spacer * 1.5;
     padding-right: $spacer * 1.5;
   }
-  @include for-big-desktop-up {
-    max-width: 1120px;
+}
+
+// controls column layout
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+
+  @include for-phone-only {
+    width: 100%;
   }
+}
+
+.first {
+  padding-right: $spacer;
+  background: yellow;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  //background: #efefef;
+}
+
+.hero {
+  margin-bottom: $spacer * 2;
+  //text-align: center;
+}
+
+.hero-images {
+  margin-top: $spacer;
+
+  @include for-phone-only {
+    text-align: center;
+  }
+
+  img {
+    float: left;
+    margin: 0 $spacer $spacer 0;
+
+    @include for-phone-only {
+      float: none;
+    }
+
+    }
+/*  img:nth-child(1) {
+    margin-left: 0;
+  } */
 }
 
 .logo-button {
   font-size: $base-font-size * 2;
-  margin: $spacer * 2 0;
+  margin-left: $spacer;
+  margin-top: $spacer;
+
+  @include for-phone-only {
+    margin-top: $spacer + 11px;
+  }
+
+  @include for-tablet-landscape-up {
+      margin-left: $spacer;
+  }
 
   @include for-desktop-up {
     font-size: $base-font-size * 3;
+    margin-left: $spacer * 1.5;
   }
 
   a:hover{
@@ -338,7 +400,10 @@ footer {
   }
 //controls logo size
   img {
-    max-height: 32px;
+    max-height: $logo-size;
+    @include for-desktop-up {
+      max-height: $logo-size * 1.25;
+    }
   }
 }
 
@@ -582,7 +647,7 @@ body {
 #overlay-button {
   position: absolute;
   right: $spacer;
-  top: 56px;
+  top: $spacer;
   padding: 26px 11px;
   z-index: 5;
   cursor: pointer;
@@ -617,7 +682,7 @@ body {
     }
 
     @include for-desktop-up {
-      top: 68px;
+      top: $spacer;
     }
 
 }
@@ -648,10 +713,12 @@ input[type=checkbox]:checked ~ #overlay-button {
 #overlay {
   height: 100vh;
   width: 100vw;
-  background: #ffffff;
+  background: #fff;
   z-index: 2;
   visibility: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
   &.active {
     visibility: visible;
   }

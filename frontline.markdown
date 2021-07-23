@@ -1,9 +1,7 @@
 ---
 layout: default
-title: frontline
+title: Frontline
 ---
-
-# Frontline
 
 <p>Uniquely human activities - how Rhythm adds value</p>
 <ul>

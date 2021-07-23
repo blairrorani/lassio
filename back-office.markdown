@@ -3,20 +3,17 @@ layout: default
 title: Back Office Automation
 ---
 
-# {{ page.title }}
+Frees people up to do things that are uniquely human.
 
-<p>Frees people up to do things that are uniquely human.</p>
-<ul>
-  <li>Human Care</li>
-  <li>Problem Solving</li>
-  <li>Innovation</li>
-  <li>Process Improvement</li>
-  <li>Transformation</li>
-  <li>Customer Service</li>
-  <li>Research</li>
-</ul>
+- Human Care
+- Problem Solving
+- Innovation
+- Process Improvement
+- Transformation
+- Customer Service
+- Research
 
-<h2>Automation + AI journey</h2>
+## Automation + AI journey
 
 <!-- timeline-->
 <div class="timeline" style="margin: 48px 0;">
