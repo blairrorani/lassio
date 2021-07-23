@@ -380,6 +380,8 @@ footer {
 
   @include for-phone-only {
     text-align: center;
+    width: 33.3%;
+
   }
 
   img {
