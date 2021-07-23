@@ -7,15 +7,16 @@ title: Home
 
     <h1>Our newest product: Rhythm</h1>
     <p>Connecting the frontline in the era of distributed, remote and hybrid work.</p>
-    <button type="button" name="button" class="button" style="margin-right: 24px; margin-bottom: 24px;" onclick="window.location.href='/lassio/frontline';">For the frontline</button>
-    <button type="button" name="button" class="button" onclick="window.location.href='/lassio/back-office';">For the back office</button>
+    <button type="button" name="button" class="button" style="margin-right: 24px; margin-bottom: 24px;" onclick="window.location.href='{{ site.baseurl }}/frontline';">For the frontline</button>
+    <button type="button" name="button" class="button" onclick="window.location.href='{{ site.baseurl }}/back-office';">For the back office</button>
 
     <div class="row hero-images">
-    <div><img src="{{ site.baseurl }}/assets/images/rhythm-dashboard-screenshot.png" alt="" class="hero-img"></div>
-    <div><img src="{{ site.baseurl }}/assets/images/rhythm-dashboard-screenshot.png" alt="" class="hero-img"></div>
-    <div><img src="{{ site.baseurl }}/assets/images/rhythm-dashboard-screenshot.png" alt="" class="hero-img"></div>
+    <img src="{{ site.baseurl }}/assets/images/rhythm-dashboard-screenshot.png" alt="" class="hero-img">
+    <img src="{{ site.baseurl }}/assets/images/rhythm-health-scan.png" alt="" class="hero-img">
+    <img src="{{ site.baseurl }}/assets/images/rhythm-analytics.png" alt="" class="hero-img">
     </div>
 </div>
+
 
 > “Thanks to our teams using Lassio Rhythm and the notifications built in&mdash;we were able to pickup on and prevent several frontline workers from attending some work sites. It’s these types of pro-active services that will help our Compliance teams better deal with Covid cases and the uncertain environment we currently live in”
 

@@ -368,7 +368,7 @@ footer {
     margin: 0 $spacer $spacer 0;
 
     @include for-phone-only {
-      float: none;
+      //float: none;
     }
 
     }
@@ -380,10 +380,10 @@ footer {
 .logo-button {
   font-size: $base-font-size * 2;
   margin-left: $spacer;
-  margin-top: $spacer;
+  margin-top: $spacer * .875;
 
   @include for-phone-only {
-    margin-top: $spacer + 11px;
+    margin-top: $spacer * 1.175;
   }
 
   @include for-tablet-landscape-up {
