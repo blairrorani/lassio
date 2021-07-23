@@ -232,7 +232,7 @@ button {
   background-color: $link-color;
   border: none;
   color: white;
-  padding: $spacer / 2;
+  padding: $spacer * 0.25;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -323,6 +323,20 @@ footer {
   }
 }
 
+.product-logo {
+  max-width: $spacer * 2;
+  margin-bottom: $spacer;
+
+  img {
+    border-radius: 8px;
+  }
+
+  @include for-phone-only {
+    max-width: $spacer * 1.5;
+    margin-bottom: $spacer / 2;
+  }
+}
+
 // controls column layout
 
 /* Create three equal columns that floats next to each other */
@@ -356,25 +370,25 @@ footer {
   //text-align: center;
 }
 
-.hero-images {
-  margin-top: $spacer;
+.hero-img {
+  //margin-top: $spacer;
+  width: 100%;
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: $spacer * 0.5;
 
   @include for-phone-only {
     text-align: center;
   }
 
   img {
-    float: left;
-    margin: 0 $spacer $spacer 0;
+    max-width: 100%;
 
     @include for-phone-only {
       //float: none;
     }
-
-    }
-/*  img:nth-child(1) {
-    margin-left: 0;
-  } */
+  }
 }
 
 .logo-button {
