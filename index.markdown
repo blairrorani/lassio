@@ -11,9 +11,9 @@ title: Home
     <button type="button" name="button" class="button" onclick="window.location.href='/lassio/back-office';">For the back office</button>
 
     <div class="row hero-images">
-    <div><img src="assets/images/frame 8.png" alt="" class="hero-img"></div>
-    <div><img src="assets/images/frame 8.png" alt="" class="hero-img"></div>
-    <div><img src="assets/images/frame 8.png" alt="" class="hero-img"></div>
+    <div><img src="{{ site.baseurl }}/assets/images/frame 8.png" alt="" class="hero-img"></div>
+    <div><img src="{{ site.baseurl }}/assets/images/frame 8.png" alt="" class="hero-img"></div>
+    <div><img src="{{ site.baseurl }}/assets/images/frame 8.png" alt="" class="hero-img"></div>
     </div>
 </div>
 
